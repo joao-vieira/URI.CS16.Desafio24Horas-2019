@@ -302,28 +302,28 @@ $(function () {
 $(function () {
     //some data
     var d1 = [];
-    for (var i = 0; i <= 10; i += 1) d1.push([i, parseInt(Math.random() * 60)]);
+    for (var i = 0; i <= 5; i += 1) d1.push([i, parseInt(Math.random() * 60)]);
     var d2 = [];
-    for (var i = 0; i <= 10; i += 1) d2.push([i, parseInt(Math.random() * 40)]);
+    for (var i = 0; i <= 5; i += 1) d2.push([i, parseInt(Math.random() * 40)]);
     var d3 = [];
-    for (var i = 0; i <= 10; i += 1) d3.push([i, parseInt(Math.random() * 25)]);
+    for (var i = 0; i <= 5; i += 1) d3.push([i, parseInt(Math.random() * 25)]);
     var ds = new Array();
     ds.push({
-        label: "Data One"
+        label: "Tempo Real"
         , data: d1
         , bars: {
             order: 1
         }
     });
     ds.push({
-        label: "Data Two"
+        label: "Paradas Programadas"
         , data: d2
         , bars: {
             order: 2
         }
     });
     ds.push({
-        label: "Data Three"
+        label: "Paradas Não-Programadas"
         , data: d3
         , bars: {
             order: 3

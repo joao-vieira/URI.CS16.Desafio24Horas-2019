@@ -2444,7 +2444,8 @@ Dashboard3 chart
   .total-sales .ct-series-a .ct-bar {
     stroke: #1e88e5; }
   .total-sales .ct-series-b .ct-bar {
-    stroke: #26c6da; }
+    /* stroke: #26c6da;  */
+  }
   .total-sales .ct-series-c .ct-bar {
     stroke: #fc4b6c; }
 
