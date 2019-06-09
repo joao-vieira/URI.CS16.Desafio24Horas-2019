@@ -62,23 +62,16 @@
                 <!-- Logo -->
                 <!-- ============================================================== -->
                 <div class="navbar-header">
-                    <a class="navbar-brand" href="{{ route('dashboard') }}">
+                    <a class="navbar-brand" href="{{ route('/') }}">
                         <!-- Logo icon -->
                         <b>
                             <!--You can put here icon as well // <i class="wi wi-sunset"></i> //-->
-                            <!-- Dark Logo icon -->
-                            <img src="{{ asset('images/logo-icon.png') }}" alt="homepage" class="dark-logo" />
                             <!-- Light Logo icon -->
-                            <img src="{{ asset('images/logo-light-icon.png') }}" alt="homepage" class="light-logo" />
+                            <img src="{{ asset('images/icon-indicateam.png') }}" style="height: 50px" alt="homepage" class="light-logo" />
                         </b>
                         <!--End Logo icon -->
                         <!-- Logo text -->
-                        <span>
-                         <!-- dark Logo text -->
-                         <img src="{{ asset('images/logo-text.png') }}" alt="homepage" class="dark-logo" />
-                         <!-- Light Logo text -->    
-                         <img src="{{ asset('images/logo-light-text.png') }}" class="light-logo" alt="homepage" /></span> </a>
-                </div>
+                        </div>
                 <!-- ============================================================== -->
                 <!-- End Logo -->
                 <!-- ============================================================== -->
@@ -101,7 +94,7 @@
                         <!-- Profile -->
                         <!-- ============================================================== -->
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle text-muted waves-effect waves-dark" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="{{ asset('images/users/1.jpg') }}" alt="user" class="profile-pic" /></a>
+                            <a class="nav-link dropdown-toggle text-muted waves-effect waves-dark" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="{{ asset('images/users/profile.png') }}" alt="user" class="profile-pic" /></a>
                             <div class="dropdown-menu dropdown-menu-right scale-up">
                                 <ul class="dropdown-user">
                                     <li>

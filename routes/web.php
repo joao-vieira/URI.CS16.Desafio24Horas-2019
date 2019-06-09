@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('base');
+    return view('welcome');
 })->name('/');
 
 Route::get('dashboard', ['as' => 'dashboard', 'uses' => 'DashboardController@index'] );
@@ -24,3 +24,7 @@ Route::group(['prefix' => 'indicadores'], function() {
 });
 
 Route::get('dicionario', ['as' => 'dicionario', 'uses' => 'DicionarioController@index'] );
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
