@@ -13,8 +13,14 @@
 
 Route::get('/', function () {
     return view('base');
+})->name('/');
+
+Route::get('dashboard', ['as' => 'dashboard', 'uses' => 'DashboardController@index'] );
+
+Route::group(['prefix' => 'indicadores'], function() {
+    Route::get('qualidade', ['as' => 'indicadores.qualidade', 'uses' => 'IndicadoresController@indexQualidade'] );
+    Route::get('performance', ['as' => 'indicadores.performance', 'uses' => 'IndicadoresController@indexPerformance'] );
+    Route::get('disponibilidade', ['as' => 'indicadores.disponibilidade', 'uses' => 'IndicadoresController@indexDisponibilidade'] );
 });
 
-Route::get('/base', function () {
-    return view('base');
-});
+Route::get('dicionario', ['as' => 'dicionario', 'uses' => 'DicionarioController@index'] );

@@ -62,7 +62,7 @@
                 <!-- Logo -->
                 <!-- ============================================================== -->
                 <div class="navbar-header">
-                    <a class="navbar-brand" href="index.html">
+                    <a class="navbar-brand" href="{{ route('/') }}">
                         <!-- Logo icon -->
                         <b>
                             <!--You can put here icon as well // <i class="wi wi-sunset"></i> //-->
@@ -169,25 +169,19 @@
                 <nav class="sidebar-nav">
                     <ul id="sidebarnav">
                         <li class="nav-small-cap">SISTEMA</li>
+                        
+                        <li> <a class="waves-effect waves-dark" href="{{ route('dashboard') }}" aria-expanded="false"><i class="mdi mdi-home"></i><span class="hide-menu"> Dashboard </span></a> </li>
+                        
                         <li>
-                            <a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false"><i class="mdi mdi-gauge"></i><span class="hide-menu">Dashboard </span></a>
+                            <a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false"><i class="mdi mdi-chart-line"></i><span class="hide-menu">Indicadores </span></a>
                             <ul aria-expanded="false" class="collapse">
-                                <li><a href="index.html">Dashboard 1</a></li>
-                                <li><a href="index2.html">Dashboard 2</a></li>
+                                <li><a href="{{ route('indicadores.qualidade') }}">Qualidade</a></li>
+                                <li><a href="{{ route('indicadores.performance') }}">Performance</a></li>
+                                <li><a href="{{ route('indicadores.disponibilidade') }}">Disponibilidade</a></li>
                             </ul>
                         </li>
-
-                        <li class="nav-devider"></li>
-
-                        <li class="nav-small-cap">CONFIGURAÇÕES PESSOAIS</li>
-                        <li>
-                            <a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false"><i class="mdi mdi-file"></i><span class="hide-menu">Forms</span></a>
-                            <ul aria-expanded="false" class="collapse">
-                                <li><a href="form-basic.html">Basic Forms</a></li>
-                                <li><a href="form-layout.html">Form Layouts</a></li>
-                            </ul>
-                        </li>
-                       
+                        
+                        <li> <a class="waves-effect waves-dark" href="{{ route('dicionario') }}" aria-expanded="false"><i class="mdi mdi-library-books"></i><span class="hide-menu"> Dicionário </span></a> </li>
                     </ul>
                 </nav>
                 <!-- End Sidebar navigation -->
@@ -233,7 +227,7 @@
                 <!-- ============================================================== -->
                 <div class="row page-titles">
                     <div class="col-md-5 col-8 align-self-center">
-                        <h3 class="text-themecolor m-b-0 m-t-0"> <i>Layout</i> base para a criação de todas as demais telas </h3>
+                        <h3 class="text-themecolor m-b-0 m-t-0"> INDICATEam </h3>
                         <ol class="breadcrumb">
 
                             @yield('breadcrumbs')

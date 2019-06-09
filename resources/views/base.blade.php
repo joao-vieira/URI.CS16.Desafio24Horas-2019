@@ -1,7 +1,7 @@
 @extends('app')
 
 
-@section('page_title', 'Layout Base')
+@section('page_title', 'INDICATEam')
 
 
 
@@ -46,5 +46,6 @@
         </div>
     </div>
 </div>
-    
+
+
 @endsection
