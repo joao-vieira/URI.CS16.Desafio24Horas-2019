@@ -32,7 +32,7 @@
                             <div class="card-body"></br>
                                 <ul class="list-inline pull-right">
                                     <li>
-                                        <h6 class="text-muted"><i class="fa fa-circle m-r-5 text-info"></i>Metros Bons</h6>
+                                        <h6 class="text-muted"><i class="fa fa-circle m-r-5" style="color:red"></i>Metros Refugados</h6>
                                     </li>
                                     <li>
                                         <h6 class="text-muted"><i class="fa fa-circle m-r-5" style="color:#f05b4f"></i>Metros Refugados</h6>
@@ -47,10 +47,71 @@
 
         </div>
     </div>
+    <div class="col-lg-12">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Ranking de maquina com maior refugo</h4>
+                <table class="table browser m-t-30 no-border">
+                    <tbody>
+                        <tr>
+                            <td>CAN8042</td>
+                            <td class="text-right"><span class="label label-light-danger">10%</span></td>
+                        </tr>
+                        <tr>
+                            <td>CAN3081</td>
+                            <td class="text-right"><span class="label label-light-warning">5%</span></td>
+                        </tr>
+                        <tr>
+                            <td>PE10</td>
+                            <td class="text-right"><span class="label label-light-warning">5%</span></td>
+                        </tr>
+                        <tr>
+                            <td>SCS6033</td>
+                            <td class="text-right"><span class="label label-light-info">3%</span></td>
+                        </tr>
+                        <tr>
+                            <td>DG01</td>
+                            <td class="text-right"><span class="label label-light-info">3%</span></td>
+                        </tr>
+                        <tr>
+                            <td>PE20</td>
+                            <td class="text-right"><span class="label label-light-info">3%</span></td>
+                        </tr>
+                        <tr>
+                            <td>CAN1081</td>
+                            <td class="text-right"><span class="label label-light-info">3%</span></td>
+                        </tr>
+                        <tr>
+                            <td>JK20</td>
+                            <td class="text-right"><span class="label label-light-info">2%</span></td>
+                        </tr>
+                        <tr>
+                            <td>SCS1104</td>
+                            <td class="text-right"><span class="label label-light-info">2%</span></td>
+                        </tr>
+                        <tr>
+                            <td>SCS5104</td>
+                            <td class="text-right"><span class="label label-light-info">1%</span></td>
+                        </tr>
+                        <tr>
+                            <td>SCS5052</td>
+                            <td class="text-right"><span class="label label-light-info">1%</span></td>
+                        </tr>
+                        <tr>
+                            <td>JK10</td>
+                            <td class="text-right"><span class="label label-light-info">1%</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
 </div>
 
 
 <script src="{{ asset('plugins/jquery/jquery.min.js') }}"></script>
+
 <script src="{{asset('plugins/chartist-js/dist/chartist.min.js')}}"></script>
 <script src="{{asset('plugins/chartist-plugin-tooltip-master/dist/chartist-plugin-tooltip.min.js')}}"></script>
 <script src="{{asset('plugins/echarts/echarts-all.js')}}"></script>
